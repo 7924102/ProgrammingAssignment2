@@ -40,15 +40,3 @@ cacheSolve <- function(x, ...) {
         s <- solve(data, ...)
         x$setSolve(s)
 }
-
-## Example usage
-
-x1 <- matrix(c(1:4),2,2)
-m1 <- makeCacheMatrix(x1)
-cachesolve(m1)
-x2 <- matrix(c(2:5),2,2)
-m2 <- makeCacheMatrix(x2)
-cachesolve(m2)
-
-cachesolve(m1)
-cachesolve(m2)
